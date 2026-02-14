@@ -314,3 +314,42 @@ html {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+@keyframes loader-shimmer {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(150%);
+  }
+}
+
+@keyframes loader-slide {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
+@keyframes grow {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.animate-grow {
+  animation: grow 2s ease-in-out forwards;
+}
+
+.animate-loader-shimmer {
+  animation: loader-shimmer 2.5s infinite;
+}
+
+.animate-loader-slide {
+  animation: loader-slide 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}

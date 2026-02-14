@@ -117,7 +117,7 @@ const Hero = () => {
   }, []);
 
   useEffect(() => {
-    const targetDate = new Date("February 28, 2026 00:00:00").getTime();
+    const targetDate = new Date("March 13, 2026 00:00:00").getTime();
 
     const updateCountdown = () => {
       const now = new Date().getTime();
@@ -282,7 +282,7 @@ const Hero = () => {
             <div className="flex items-center gap-6 text-slate-400">
               <div className="flex items-center gap-2">
                 <Calendar size={18} className="text-indigo-400" />
-                <span className="font-mono text-sm">Feb 28, 2026</span>
+                <span className="font-mono text-sm">March 13-14, 2026</span>
               </div>
               <div className="w-1 h-1 rounded-full bg-slate-600"></div>
               <div className="flex items-center gap-2">

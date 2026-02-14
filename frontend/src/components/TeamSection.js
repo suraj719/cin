@@ -75,7 +75,7 @@ const TeamSection = () => {
                 {/* Social Links */}
                 <div className="flex gap-4">
                   <a
-                    href={member.social.linkedin}
+                    href="https://www.linkedin.com/in/surajthammi/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 glass-effect rounded-lg hover:bg-indigo-600/30 transition-colors"
@@ -84,20 +84,13 @@ const TeamSection = () => {
                     <Linkedin size={18} className="text-slate-300" />
                   </a>
                   <a
-                    href={member.social.twitter}
+                    href="https://x.com/0xsuraj719"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 glass-effect rounded-lg hover:bg-cyan-600/30 transition-colors"
                     data-testid={`twitter-${member.name.toLowerCase().replace(/\s+/g, "-")}`}
                   >
                     <Twitter size={18} className="text-slate-300" />
-                  </a>
-                  <a
-                    href={`mailto:${member.social.email}`}
-                    className="p-2 glass-effect rounded-lg hover:bg-rose-600/30 transition-colors"
-                    data-testid={`email-${member.name.toLowerCase().replace(/\s+/g, "-")}`}
-                  >
-                    <Mail size={18} className="text-slate-300" />
                   </a>
                 </div>
               </div>

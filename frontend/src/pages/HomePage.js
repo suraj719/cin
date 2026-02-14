@@ -5,6 +5,7 @@ import EventsSection from "../components/EventsSection";
 import GallerySection from "../components/GallerySection";
 import SponsorsSection from "../components/SponsorsSection";
 import TeamSection from "../components/TeamSection";
+import FAQSection from "../components/FAQSection";
 import Footer from "../components/Footer";
 
 const HomePage = () => {
@@ -16,6 +17,7 @@ const HomePage = () => {
       <GallerySection />
       <SponsorsSection />
       <TeamSection />
+      <FAQSection />
       <Footer />
     </div>
   );

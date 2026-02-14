@@ -32,16 +32,7 @@ const Footer = () => {
             {/* Social Links */}
             <div className="flex gap-4">
               <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 glass-effect rounded-lg hover:bg-indigo-600/30 transition-colors"
-                data-testid="social-facebook"
-              >
-                <Facebook size={20} className="text-slate-300" />
-              </a>
-              <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/cvrciencia2k24/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 glass-effect rounded-lg hover:bg-rose-600/30 transition-colors"
@@ -50,16 +41,7 @@ const Footer = () => {
                 <Instagram size={20} className="text-slate-300" />
               </a>
               <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 glass-effect rounded-lg hover:bg-cyan-600/30 transition-colors"
-                data-testid="social-twitter"
-              >
-                <Twitter size={20} className="text-slate-300" />
-              </a>
-              <a
-                href="https://linkedin.com"
+                href="https://in.linkedin.com/in/cvr-ciencia-8265152b7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 glass-effect rounded-lg hover:bg-indigo-600/30 transition-colors"
@@ -204,6 +186,21 @@ const Footer = () => {
               </a>
             </div>
           </div>
+        </div>
+
+        {/* Made with Love Banner */}
+        <div className="mt-12 pt-8 border-t border-slate-800/50 flex justify-center">
+          <p className="text-slate-500 font-mono text-sm flex items-center gap-2">
+            Made with <span className="text-rose-500 animate-pulse">❤</span> by{" "}
+            <a
+              href="https://suraj.works/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-400 hover:text-cyan-300 transition-colors"
+            >
+              Suraj
+            </a>
+          </p>
         </div>
       </div>
 
