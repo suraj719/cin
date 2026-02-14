@@ -30,26 +30,11 @@ const EventsSection = () => {
     return () => ctx.revert();
   }, []);
 
-  // Custom Sorting Logic
+  // Sort events by date
   const sortedEvents = useMemo(() => {
     const events = [...allEvents];
-    const fiveK = events.find((e) => e.id === "5k-run");
-    const flashMob =
-      events.find((e) => e.id === "flash-mob") ||
-      events.find((e) => e.id === "flashmob");
-
-    // Sort others by date
-    const others = events.filter(
-      (e) => e.id !== "5k-run" && e.id !== "flash-mob" && e.id !== "flashmob",
-    );
-    others.sort((a, b) => new Date(a.date) - new Date(b.date));
-
-    // Construct final list: 5K Run -> Flash Mob -> Others (Date sorted)
-    const result = [];
-    if (fiveK) result.push(fiveK);
-    if (flashMob) result.push(flashMob);
-    result.push(...others);
-    return result;
+    events.sort((a, b) => new Date(a.date) - new Date(b.date));
+    return events;
   }, []);
 
   return (
@@ -108,7 +93,7 @@ const EventsSection = () => {
               <Link
                 key={event.id}
                 to={`/event/${event.id}`}
-                className={`flex-shrink-0 w-[300px] md:w-[340px] snap-center group ${rotationClass} transition-transform duration-300 hover:scale-105 hover:rotate-0 hover:z-50`}
+                className={`flex-shrink-0 w-[320px] md:w-[360px] snap-center group ${rotationClass} transition-transform duration-300 hover:scale-105 hover:rotate-0 hover:z-50`}
                 data-testid={`event-card-${event.id}`}
               >
                 <div className="w-full relative drop-shadow-ticket">

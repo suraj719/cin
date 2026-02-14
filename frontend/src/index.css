@@ -49,9 +49,9 @@ body::after {
   z-index: 50; /* Ensure it's on top of standard content but below modals if any */
 }
 
-/* Ensure font heading uses Rubik Mono One */
+/* Ensure font heading uses Unbounded */
 .font-heading {
-  font-family: "Rubik Mono One", sans-serif;
+  font-family: "Unbounded", sans-serif;
 }
 
 /* Remove global dots */

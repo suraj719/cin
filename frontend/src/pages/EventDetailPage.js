@@ -14,7 +14,6 @@ import {
   ArrowLeft,
   Mail,
 } from "lucide-react";
-import { ComicText } from "../registry/magicui/comic-text";
 
 const EventDetailPage = () => {
   const { eventId } = useParams();
@@ -93,12 +92,9 @@ const EventDetailPage = () => {
               {event.category}
             </span>
             <div className="mb-4">
-              <ComicText
-                fontSize="clamp(3rem, 5vw, 6rem)"
-                className="text-white drop-shadow-[5px_5px_0_#000] leading-none"
-              >
+              <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-black text-white mb-6 drop-shadow-[0_4px_6px_rgba(0,0,0,0.5)]">
                 {event.name}
-              </ComicText>
+              </h1>
             </div>
             <p className="text-2xl md:text-3xl text-white font-mono bg-black/60 inline-block px-2">
               {event.tagline}

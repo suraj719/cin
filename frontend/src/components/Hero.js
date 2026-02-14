@@ -11,7 +11,6 @@ import {
   Activity,
   ChevronDown,
 } from "lucide-react";
-import { ComicText } from "../registry/magicui/comic-text";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -117,7 +116,7 @@ const Hero = () => {
   }, []);
 
   useEffect(() => {
-    const targetDate = new Date("March 13, 2026 00:00:00").getTime();
+    const targetDate = new Date("March 7, 2026 00:00:00").getTime();
 
     const updateCountdown = () => {
       const now = new Date().getTime();
@@ -202,26 +201,14 @@ const Hero = () => {
 
           {/* Main Title */}
           <div ref={titleRef} className="mb-10 flex flex-col items-center">
-            <div className="relative z-10">
-              <ComicText
-                fontSize="clamp(3rem, 10vw, 8rem)"
-                className="drop-shadow-lg leading-none"
-                fillColor="#ffffff"
-                dotsColor="#6366f1"
-              >
+            <h1 className="font-heading text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tight leading-none">
+              <span className="text-white drop-shadow-[0_0_25px_rgba(255,255,255,0.3)] block mb-2 sm:mb-4">
                 CIENCIA
-              </ComicText>
-            </div>
-            <div className="relative z-10 -mt-2 sm:-mt-4">
-              <ComicText
-                fontSize="clamp(3rem, 10vw, 8rem)"
-                className="drop-shadow-lg leading-none"
-                fillColor="#22d3ee"
-                dotsColor="#083344"
-              >
+              </span>
+              <span className="gradient-text drop-shadow-[0_0_30px_rgba(99,102,241,0.4)]">
                 2K26
-              </ComicText>
-            </div>
+              </span>
+            </h1>
           </div>
 
           <p
@@ -282,7 +269,7 @@ const Hero = () => {
             <div className="flex items-center gap-6 text-slate-400">
               <div className="flex items-center gap-2">
                 <Calendar size={18} className="text-indigo-400" />
-                <span className="font-mono text-sm">March 13-14, 2026</span>
+                <span className="font-mono text-sm">March 7-14, 2026</span>
               </div>
               <div className="w-1 h-1 rounded-full bg-slate-600"></div>
               <div className="flex items-center gap-2">
